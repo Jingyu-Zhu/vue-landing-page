@@ -243,7 +243,7 @@ export default {
 
       try {
         // Call the API endpoint
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://vue-landing-page-production.railway.app'
         const response = await fetch(`${apiUrl}/api/contact`, {
           method: 'POST',
           headers: {
