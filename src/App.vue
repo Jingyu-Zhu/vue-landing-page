@@ -37,10 +37,10 @@
             Fast, modern, and developer-friendly.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="btn-primary text-lg px-8 py-4">
+            <button class="btn-primary text-base px-6 py-3">
               Start Building
             </button>
-            <button class="btn-secondary text-lg px-8 py-4">
+            <button class="btn-secondary text-base px-6 py-3">
               View Examples
             </button>
           </div>
