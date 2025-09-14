@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
-            <h1 class="text-2xl font-bold text-primary-600">VueLand</h1>
+            <h1 class="text-2xl font-bold text-primary-600">Vue Landing Page</h1>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
@@ -16,7 +16,7 @@
             </div>
           </div>
           <div class="flex items-center space-x-4">
-            <button class="btn-secondary">Sign In</button>
+            <button class="btn-secondary">Sign-In</button>
             <button class="btn-primary">Get Started</button>
           </div>
         </div>
