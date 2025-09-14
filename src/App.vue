@@ -12,7 +12,7 @@
               <router-link to="/" class="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">Home</router-link>
               <a href="#features" class="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">Features</a>
               <a href="#about" class="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
-              <router-link to="/contact" class="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">Contact</router-link>
+              <router-link to="/contact" class="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">Contact Us</router-link>
             </div>
           </div>
           <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-4">
