@@ -20,7 +20,16 @@ const app = express();
 const PORT = config.PORT;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:3001', 
+    'http://localhost:3002',
+    'https://vue-landing-page-delta.vercel.app',
+    'https://vue-landing-page.vercel.app'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Configure SendGrid
@@ -28,6 +37,7 @@ sgMail.setApiKey(config.SENDGRID_API_KEY);
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
+  console.log('Contact form request received:', req.body);
   try {
     const { firstName, lastName, email, subject, message } = req.body;
 
@@ -166,6 +176,15 @@ The VueLand Team
       message: 'Failed to send message. Please try again later.' 
     });
   }
+});
+
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ 
+    success: true, 
+    message: 'VueLand API Server is running',
+    timestamp: new Date().toISOString()
+  });
 });
 
 // Health check endpoint
